@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+exports/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+node_modules/
+.venv/
+tmp/
