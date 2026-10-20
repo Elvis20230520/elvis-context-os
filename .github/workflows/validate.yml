@@ -1,0 +1,22 @@
+name: Validate personal context
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate facts and sources
+        run: python3 scripts/context.py validate
+      - name: Test export and update boundaries
+        run: python3 -m unittest discover -s tests -v
+      - name: Rebuild using the recorded review date
+        run: |
+          REVIEW_DATE=$(python3 -c "import json; print(json.load(open('data/build-manifest.json'))['generated_as_of'])")
+          python3 scripts/context.py build --as-of "$REVIEW_DATE"
+          git diff --exit-code -- CURRENT.md contexts docs data/build-manifest.json
+      - name: Check whitespace
+        run: git diff --check
