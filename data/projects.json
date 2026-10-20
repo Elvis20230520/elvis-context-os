@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "projects": [
+    {
+      "id": "officeflow",
+      "name": "OfficeFlow",
+      "relationship": "核心商业产品",
+      "related": [
+        "personal-brand",
+        "engineering-automation"
+      ],
+      "fact_ids": [
+        "OF001",
+        "OF002",
+        "OF003",
+        "OF004",
+        "OF005",
+        "OF006",
+        "OF007",
+        "OF008",
+        "OF009",
+        "OF010",
+        "OF011",
+        "OF012",
+        "OF013",
+        "OF014",
+        "OF015",
+        "OF016",
+        "OF017",
+        "OF018",
+        "OF019",
+        "OF020",
+        "OF021",
+        "OF022",
+        "OF023",
+        "OF024",
+        "OF025",
+        "OF026",
+        "OF027",
+        "OF028",
+        "OF029",
+        "OF030",
+        "OF031",
+        "OF032",
+        "OF033",
+        "OF034",
+        "OF035"
+      ]
+    },
+    {
+      "id": "engineering-automation",
+      "name": "工程资料自动化",
+      "relationship": "独立、自用优先；成熟后可接入OfficeFlow",
+      "related": [
+        "documentflow",
+        "officeflow"
+      ],
+      "fact_ids": [
+        "EN001",
+        "EN002",
+        "EN005",
+        "EN006",
+        "EN007",
+        "EN014",
+        "EN015"
+      ]
+    },
+    {
+      "id": "documentflow",
+      "name": "DocumentFlow / AI Gateway",
+      "relationship": "文档体系与AI执行边界工作名",
+      "related": [
+        "engineering-automation"
+      ],
+      "fact_ids": [
+        "EN016",
+        "EN017",
+        "EN018",
+        "EN019",
+        "EN020",
+        "EN021"
+      ]
+    },
+    {
+      "id": "engineering-platform",
+      "name": "工程资料线上平台",
+      "relationship": "业务平台方向，成熟度待补",
+      "related": [
+        "engineering-automation"
+      ],
+      "fact_ids": [
+        "PR001",
+        "PR002",
+        "PR003",
+        "PR010"
+      ]
+    },
+    {
+      "id": "usb-project",
+      "name": "U盘绑定项目",
+      "relationship": "独立方向",
+      "related": [
+        "engineering-platform"
+      ],
+      "fact_ids": [
+        "PR004"
+      ]
+    },
+    {
+      "id": "collaboration-platform",
+      "name": "国际技术人员协作平台",
+      "relationship": "独立方向",
+      "related": [],
+      "fact_ids": [
+        "PR005"
+      ]
+    },
+    {
+      "id": "knowledge-system",
+      "name": "企业知识系统 / LLM Wiki",
+      "relationship": "内部知识与审核体系方向",
+      "related": [
+        "documentflow"
+      ],
+      "fact_ids": [
+        "PR006",
+        "SK006"
+      ]
+    },
+    {
+      "id": "personal-brand",
+      "name": "Elvis Builds AI",
+      "relationship": "英文内容与产品推广品牌",
+      "related": [
+        "officeflow"
+      ],
+      "fact_ids": [
+        "CT001",
+        "CT002",
+        "CT003",
+        "CT004",
+        "CT005",
+        "CT008",
+        "CT009"
+      ]
+    },
+    {
+      "id": "polymarket-research",
+      "name": "Polymarket研究与自动交易",
+      "relationship": "个人研究项目；无上线盈利证据",
+      "related": [],
+      "fact_ids": [
+        "RE001",
+        "RE002",
+        "RE003",
+        "RE008",
+        "RE009",
+        "RE010",
+        "RE011"
+      ]
+    },
+    {
+      "id": "rea-research",
+      "name": "REA与Codex",
+      "relationship": "逆向与安全工具研究",
+      "related": [],
+      "fact_ids": [
+        "RE004",
+        "RE005",
+        "RE006"
+      ]
+    },
+    {
+      "id": "personal-context",
+      "name": "Elvis Context OS",
+      "relationship": "本仓库；跨产品个人上下文",
+      "related": [
+        "officeflow",
+        "documentflow",
+        "personal-brand"
+      ],
+      "fact_ids": [
+        "CO016",
+        "UN008"
+      ]
+    }
+  ]
+}
