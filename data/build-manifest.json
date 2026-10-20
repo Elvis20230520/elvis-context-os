@@ -1,0 +1,33 @@
+{
+  "generated_as_of": "2026-10-20",
+  "data_sha256": "4f16146d9d0e5bb741dd0283f7b010f37a17a976607641f131b18964ec055314",
+  "files": {
+    "CURRENT.md": "80797b9263a9d495bf4376ffcd71f4e40bbfd44d7ec8d27bf48749dd0919ff32",
+    "contexts/business.md": "0b9a5dfb1c43165e368fe7966d60317b3cf308ccb52dc9c7c0f68a02e6483271",
+    "contexts/coding.md": "69f11d42d878d70e5d4bb48bb99af2e03fe15f6bea44e06959192210d77042f3",
+    "contexts/content.md": "67184900e1f9f6d01d0a7477152e2d7b176d49df77c2f58d9da9f920027bcc75",
+    "contexts/engineering.md": "075b42e9cb0ad7d333b8907bd1dc6806b8383a2c88346ff124f6e8a0a456f403",
+    "contexts/english.md": "defd0a3d4d29b2b684c83dfe3c606e4f67bfe86acd29483dd97dfcc1e23f46b7",
+    "contexts/full.md": "84122253f5d8dcde2a4e1fc32915f03c4d1979165f05cdcd7f7886254dfa7468",
+    "contexts/general.md": "dc882b8754d1048c84a1ea643d93b0e99ef9b21e75ea9d132aed96830e53b3de",
+    "contexts/officeflow.md": "fdfebaf9f5ecc138abe530a31474504689632b8bedb1e09aa6367e32b5c0cf97",
+    "contexts/research.md": "e6a036935888d2ef14d17024315378d698979b6fe4cec765998203f8e327253c",
+    "docs/REVIEW_QUEUE.md": "c948a4c857e40202fb8c4b1d7e40d471606fca5da310fea6d89e881ad2208460",
+    "docs/SOURCES.md": "d56e68b28f5785b794ae9c236adc0ed13381720ede296545b71f5a824af030c5",
+    "docs/TIMELINE.md": "09fad7e4ab9a844e1e3ccbdb3d8099503497eec596bbaef88f6db9340cd27032",
+    "docs/collaboration.md": "957de89451f18272cdf5b32203a54268e76c7e2195e35b01e5566f815180abe1",
+    "docs/companies.md": "ff31d7fbf9cadf31a446bbcec909530086b641e9e1fa1069c38565f3166f347a",
+    "docs/content.md": "d5315cd160b3d62531a4fc441915c36025c9b840fd7ec361db11341b0005ccd0",
+    "docs/devices.md": "4db9047bd3e46d5655256f02bafc7058cbd25a731c7b8e9580c66cd07a0341c8",
+    "docs/engineering.md": "3e7cbc58ddeacd3c63157b1a5387f8484d788edcf6ecf25eb8094143a365dd50",
+    "docs/finance.md": "f630f63969a882953f3adf53a826b581b33677d52c6a6a51e82fb6d222ad5ab9",
+    "docs/identity.md": "4f21d311f2eddf48edf5ba6d16864349f4aae1f37164da6b8b517e1a478f327d",
+    "docs/learning.md": "4d7aef12f5159b19d53cd2635b87c33eb0f9e3d653e78f6b1378006a24201208",
+    "docs/officeflow.md": "08a2116af40d72ebbb1a7aee0027395c513e1efdb9a8bd7b083cbe375b29f485",
+    "docs/portfolio.md": "53c01e998ae84b01ea1a20d5ffc224242cf5e6b09a02fae68bfb4b52cf17f1c1",
+    "docs/research.md": "521c29bc881f873773ef673e58c66ac1a866807c0232f8cb225daf5df66f3f8b",
+    "docs/skills.md": "a3503de298e132497e848c89804223001bd9416a8d7c4dd3091f5298f2216ca0",
+    "docs/unknowns.md": "23bf1b35e22781862990fd7cf2660edbf28a0654346ba09219710f94a89fd72e",
+    "docs/values.md": "50b3ca6d1ee5969f6472ba0edbe7647307a610a395d1ec5015434fb1b83c451f"
+  }
+}
