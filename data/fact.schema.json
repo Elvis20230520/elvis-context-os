@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Elvis Context OS fact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "domain",
+    "topics",
+    "statement",
+    "kind",
+    "status",
+    "evidence",
+    "sensitivity",
+    "observed_at",
+    "recorded_at",
+    "review_after_days",
+    "sources",
+    "priority",
+    "public_approved",
+    "supersedes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}[0-9]{3,}$"
+    },
+    "domain": {
+      "enum": [
+        "identity",
+        "values",
+        "collaboration",
+        "learning",
+        "skills",
+        "companies",
+        "finance",
+        "officeflow",
+        "engineering",
+        "portfolio",
+        "content",
+        "research",
+        "devices",
+        "unknowns"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "fact",
+        "preference",
+        "constraint",
+        "goal",
+        "requirement",
+        "inference",
+        "interest",
+        "unknown"
+      ]
+    },
+    "status": {
+      "enum": [
+        "current",
+        "historical",
+        "documented",
+        "candidate",
+        "unknown",
+        "superseded",
+        "retracted"
+      ]
+    },
+    "evidence": {
+      "enum": [
+        "memory_summary",
+        "user_quote",
+        "retrieved_user_statement",
+        "account_verified",
+        "assistant_inference",
+        "assistant_analysis",
+        "third_party_signal",
+        "document_requirement",
+        "document_record",
+        "conversation_topic"
+      ]
+    },
+    "sensitivity": {
+      "enum": [
+        "public",
+        "private",
+        "restricted"
+      ]
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_after_days": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^S[0-9]{3,}$"
+      }
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "public_approved": {
+      "type": "boolean"
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}[0-9]{3,}$"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "public_approved": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sensitivity": {
+            "const": "public"
+          }
+        }
+      }
+    }
+  ]
+}
