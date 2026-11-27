@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "1.0.0",
-  "as_of": "2026-10-20",
+  "dataset_version": "1.1.0",
+  "as_of": "2026-11-27",
   "owner_handle": "Elvis20230520",
   "preferred_name": null,
   "repository_visibility": "private",
@@ -2237,7 +2237,7 @@
       ],
       "statement": "正在推进OfficeFlow Mac版本完善。",
       "kind": "fact",
-      "status": "current",
+      "status": "superseded",
       "evidence": "user_quote",
       "sensitivity": "private",
       "observed_at": "2026-10-11",
@@ -2256,9 +2256,9 @@
       "topics": [
         "officeflow"
       ],
-      "statement": "明确Windows版正在使用，Mac版尚未完成；这是最新可见用户状态，未发现后续完成记录。",
+      "statement": "2026-10-15 本人表示 Windows 版在用、Mac 版尚未完成。Mac 版的后续进度、已验证范围及发布状态待复核。",
       "kind": "fact",
-      "status": "current",
+      "status": "superseded",
       "evidence": "user_quote",
       "sensitivity": "private",
       "observed_at": "2026-10-15",
@@ -3904,6 +3904,351 @@
       "review_after_days": null,
       "sources": [
         "S014"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "OF036",
+      "domain": "officeflow",
+      "topics": [
+        "officeflow",
+        "batch",
+        "macro"
+      ],
+      "statement": "本人曾报告一批 400 多份工程资料的执行异常：前 160 份结果正常，从第 161 份起结果异常，单独执行正常。随后将问题归因于自己的宏代码，修复和复测结果待确认。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "user_quote",
+      "sensitivity": "private",
+      "observed_at": "2026-10-23",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S015"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "OF037",
+      "domain": "officeflow",
+      "topics": [
+        "officeflow",
+        "commercialization",
+        "engineering"
+      ],
+      "statement": "本人提出评估一条推进顺序：先用工程资料自动化释放时间，再推广 OfficeFlow。具体切换条件和执行结果待确认。",
+      "kind": "interest",
+      "status": "current",
+      "evidence": "conversation_topic",
+      "sensitivity": "private",
+      "observed_at": null,
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S015"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "EN023",
+      "domain": "engineering",
+      "topics": [
+        "engineering",
+        "excel",
+        "vba"
+      ],
+      "statement": "本人要求整体比较两份不同日期的 Excel 工程资料工作簿中模块 15 的 VBA 改动。具体差异、修复或发布结果需另行核查。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "user_quote",
+      "sensitivity": "private",
+      "observed_at": "2026-10-29",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S015"
+      ],
+      "priority": 3,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "VA012",
+      "domain": "values",
+      "topics": [
+        "learning",
+        "digital-assets",
+        "documentation"
+      ],
+      "statement": "近期交流强调数据、量化与数字化的重要性，并重视把实践中获得的经验写入文档后再用于实际工作。",
+      "kind": "preference",
+      "status": "current",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-11-04",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S016",
+        "S019"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "VA013",
+      "domain": "values",
+      "topics": [
+        "engineering",
+        "software-engineering"
+      ],
+      "statement": "本人把工程资料与软件工程并列为自己的实践方向，并要求比较两者的特点与难度。该记录保留本人对能力方向的描述。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "user_quote",
+      "sensitivity": "private",
+      "observed_at": "2026-11-06",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S015"
+      ],
+      "priority": 3,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "LE024",
+      "domain": "learning",
+      "topics": [
+        "reading",
+        "knowledge-system"
+      ],
+      "statement": "知识体系阅读偏好增加讲解深度，避免篇幅过短。既有要求包括推荐去重，并联系自己的项目和决策场景。",
+      "kind": "preference",
+      "status": "current",
+      "evidence": "memory_summary",
+      "sensitivity": "private",
+      "observed_at": "2026-11-06",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S016",
+        "S002"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "CO017",
+      "domain": "collaboration",
+      "topics": [
+        "ai-team",
+        "dvid"
+      ],
+      "statement": "Dvid 团队工作台的需求进一步包括聊天式派单、@成员、团队可视化和 Ctrl+1 打开管理页。持久 Agent 和实际派单状态待核实。",
+      "kind": "requirement",
+      "status": "current",
+      "evidence": "memory_summary",
+      "sensitivity": "private",
+      "observed_at": "2026-10-20",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S016"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "SK012",
+      "domain": "skills",
+      "topics": [
+        "cloudflare",
+        "d1",
+        "operations"
+      ],
+      "statement": "2026-10-14 收到 Cloudflare D1 每日写入配额超限通知，后续还有接近阈值的告警。10 月 20 日的调查依据邮件确认告警，涉及的数据库、写入来源和实际业务影响待核实。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "document_record",
+      "sensitivity": "private",
+      "observed_at": "2026-10-14",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S017"
+      ],
+      "priority": 3,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "OF038",
+      "domain": "officeflow",
+      "topics": [
+        "officeflow",
+        "macos"
+      ],
+      "statement": "本人确认 OfficeFlow Mac 版已完成。具体版本、实际完成日期、已验证范围及发布状态待确认。",
+      "kind": "fact",
+      "status": "current",
+      "evidence": "user_quote",
+      "sensitivity": "private",
+      "observed_at": "2026-11-27",
+      "recorded_at": "2026-11-27",
+      "review_after_days": 45,
+      "sources": [
+        "S018"
+      ],
+      "priority": 1,
+      "public_approved": false,
+      "supersedes": [
+        "OF020",
+        "OF021"
+      ]
+    },
+    {
+      "id": "EN024",
+      "domain": "engineering",
+      "topics": [
+        "engineering",
+        "parameters",
+        "quality"
+      ],
+      "statement": "本人报告，近期工程分项参数的细度不足，并收到项目资料质量方面的反馈。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-11-17",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S019"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "EN025",
+      "domain": "engineering",
+      "topics": [
+        "engineering",
+        "parameters",
+        "quality"
+      ],
+      "statement": "本人计划在接下来几个月集中解决工程资料质量问题，重点改善分项参数的细度。整改完成情况和验收结果待确认。",
+      "kind": "goal",
+      "status": "current",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-11-17",
+      "recorded_at": "2026-11-27",
+      "review_after_days": 90,
+      "sources": [
+        "S019"
+      ],
+      "priority": 1,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "EN026",
+      "domain": "engineering",
+      "topics": [
+        "documentflow",
+        "traceability",
+        "review"
+      ],
+      "statement": "希望 DocumentFlow 保留原始页码、提取依据、复核记录、规则版本和适用范围，并说明各项复核能独立发现哪些错误。",
+      "kind": "preference",
+      "status": "current",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-11-06",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S019"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "EN027",
+      "domain": "engineering",
+      "topics": [
+        "engineering",
+        "traffic-safety",
+        "rule-library"
+      ],
+      "statement": "交安工程的 JA-001 交通标志、JA-002 路面标线、JA-003 波形护栏草稿规则及参数生成工具已随规则库 PR #2 合入 main。各实际项目的验收结果需分别记录。",
+      "kind": "fact",
+      "status": "historical",
+      "evidence": "document_record",
+      "sensitivity": "private",
+      "observed_at": "2026-10-22",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S020"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "VA014",
+      "domain": "values",
+      "topics": [
+        "learning",
+        "delivery",
+        "measurement"
+      ],
+      "statement": "希望每周确定一个首要成果，让学习围绕实际交付，并用可展示的能力、用户任务完成情况及净节省的人工时间校准数量指标。",
+      "kind": "preference",
+      "status": "current",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-10-24",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S019"
+      ],
+      "priority": 2,
+      "public_approved": false,
+      "supersedes": []
+    },
+    {
+      "id": "LE025",
+      "domain": "learning",
+      "topics": [
+        "reading",
+        "book-titles"
+      ],
+      "statement": "知识体系书单先列中文书名，再附英文原名。有正式中译本时优先采用正式译名。",
+      "kind": "preference",
+      "status": "current",
+      "evidence": "retrieved_user_statement",
+      "sensitivity": "private",
+      "observed_at": "2026-11-22",
+      "recorded_at": "2026-11-27",
+      "review_after_days": null,
+      "sources": [
+        "S019"
       ],
       "priority": 2,
       "public_approved": false,
