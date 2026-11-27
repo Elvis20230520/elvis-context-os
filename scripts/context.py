@@ -130,18 +130,24 @@ def select(data, profile, audience, history=False, as_of=None):
     selected=[]
     # Derive replacements across the whole ledger BEFORE audience/profile filtering.
     replaced={old for f in data['facts'] if f['status'] not in {'retracted','candidate','unknown'} for old in f['supersedes']}
+    public_ids = None
+    if audience == 'public':
+        public_ids = {
+            f['id'] for f in data['facts']
+            if f['sensitivity'] == 'public' and f['public_approved']
+        }
     for original in data['facts']:
         if original['domain'] not in PROFILES[profile]:continue
         if LEVELS[original['sensitivity']]>LEVELS[audience]:continue
-        if audience=='public' and not original['public_approved']:continue
+        if public_ids is not None and original['id'] not in public_ids:continue
         if not history and (original['status'] in {'superseded','retracted'} or original['id'] in replaced):continue
         # Historical facts stay visible as historical context, never relabelled current.
         f=dict(original)
         f['freshness']=freshness(f,as_of)
         if f['id'] in replaced and f['status']!='retracted':f['status']='superseded'
-        if audience=='public':
-            # Private source locators and registry are never placed in public exports.
+        if public_ids is not None:
             f.pop('sources',None)
+            f['supersedes'] = [previous for previous in f['supersedes'] if previous in public_ids]
         selected.append(f)
     return sorted(selected,key=lambda f:(f['priority'],list(DOMAINS).index(f['domain']),f['id']))
 
