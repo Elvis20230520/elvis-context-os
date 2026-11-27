@@ -1,6 +1,6 @@
 # Elvis Context OS · full
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：restricted
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：restricted
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
@@ -28,4 +28,6 @@
   记录：2026-07-26；constraint / documented / document_requirement；dated_record；来源 S010
 - **SK011** Freelancer.com面试成功并获得认证，是2025-11-08用户明确报告的完成结果；不补造通过率或证书等级。
   记录：2025-11-08；fact / historical / retrieved_user_statement；historical；来源 S003
+- **SK012** 2026-10-14 收到 Cloudflare D1 每日写入配额超限通知，后续还有接近阈值的告警。10 月 20 日的调查依据邮件确认告警，涉及的数据库、写入来源和实际业务影响待核实。
+  记录：2026-10-14；fact / historical / document_record；historical；来源 S017
 
