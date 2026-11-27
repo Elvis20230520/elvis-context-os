@@ -1,6 +1,6 @@
 # Elvis Context OS · english
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：private
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：private
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
@@ -57,6 +57,8 @@
   记录：2026-10-05；preference / current / user_quote；dated_record；来源 S002
 - **CO009** 近期要求建立六个有英文名和职位备注的AI员工，并希望右侧有成员头像、能够随时加人；现有信息没有证明六个持久Agent已创建。
   记录：日期未知；preference / current / user_quote；undated；来源 S002
+- **CO017** Dvid 团队工作台的需求进一步包括聊天式派单、@成员、团队可视化和 Ctrl+1 打开管理页。持久 Agent 和实际派单状态待核实。
+  记录：2026-10-20；requirement / current / memory_summary；dated_record；来源 S016
 
 ## 英语与认知学习
 
@@ -65,7 +67,7 @@
 - **LE006** 设定IELTS General Training总分至少6.5的目标，准备期三个月，计划每天2–3小时；没有已考分数。
   记录：2026-10-01；goal / current / memory_summary；dated_record；来源 S001
 - **LE007** 要求每周进行技术英语练习，语境包括Python、AI工具、软件项目和国际协作，含口语或写作小练习、纠错及更自然的职业表达。
-  记录：2026-08-24；goal / current / user_quote；dated_record；来源 S002
+  记录：2026-08-24；goal / current / user_quote；review_due；来源 S002
 - **LE008** 再次提出每周技术英语练习要求；是否存在有效自动化日程需单独检查。
   记录：2026-10-19；goal / current / user_quote；dated_record；来源 S002
 - **LE009** 英语对其国际技术协作和个人方向非常重要，希望持续提高。
@@ -74,6 +76,10 @@
   记录：2026-09-15；goal / current / user_quote；dated_record；来源 S002
 - **LE011** 持续构建认知与知识体系，推荐书籍需要避免重复，并连接实际应用。
   记录：2026-10-15；goal / current / user_quote；dated_record；来源 S002
+- **LE024** 知识体系阅读偏好增加讲解深度，避免篇幅过短。既有要求包括推荐去重，并联系自己的项目和决策场景。
+  记录：2026-11-06；preference / current / memory_summary；dated_record；来源 S016,S002
+- **LE025** 知识体系书单先列中文书名，再附英文原名。有正式中译本时优先采用正式译名。
+  记录：2026-11-22；preference / current / retrieved_user_statement；dated_record；来源 S019
 - **LE001** 历史记录：英语流利说8级、坚持507天、累计约427小时；这些数值只对应当时，不外推为今天。
   记录：2026-05-18；fact / historical / memory_summary；historical；来源 S001
 - **LE002** 历史摘要记录Google IT Automation with Python六门课程已完成；本轮未查验证书。

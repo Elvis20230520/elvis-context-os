@@ -59,8 +59,12 @@ class ContextTests(unittest.TestCase):
         d=copy.deepcopy(self.data);d['facts'][0].update(observed_at='yesterday',made_up=True)
         self.assertTrue(c.errors(d,self.sources))
     def test_future_review_due(self):
-        f=next(f for f in self.data['facts'] if f['id']=='OF021')
-        self.assertEqual(c.freshness(f,date(2026,12,31)),'review_due')
+        fact = {
+            'status': 'current',
+            'observed_at': '2026-10-15',
+            'review_after_days': 45,
+        }
+        self.assertEqual(c.freshness(fact, date(2026, 12, 31)), 'review_due')
     def test_build_deterministic_and_manifest(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp);(root/'data').mkdir();(root/'data/facts.json').write_text(json.dumps(self.data))

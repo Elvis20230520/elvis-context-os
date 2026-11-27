@@ -1,6 +1,6 @@
 # Elvis Context OS · business
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：private
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：private
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
@@ -25,6 +25,10 @@
 
 ## 价值观与习惯
 
+- **VA012** 近期交流强调数据、量化与数字化的重要性，并重视把实践中获得的经验写入文档后再用于实际工作。
+  记录：2026-11-04；preference / current / retrieved_user_statement；dated_record；来源 S016,S019
+- **VA014** 希望每周确定一个首要成果，让学习围绕实际交付，并用可展示的能力、用户任务完成情况及净节省的人工时间校准数量指标。
+  记录：2026-10-24；preference / current / retrieved_user_statement；dated_record；来源 S019
 - **VA001** 自述对困难的承受能力较高，野心大且实干。
   记录：2026-09-01；preference / current / memory_summary；dated_record；来源 S001
 - **VA002** 强调自己把控和设计人生方向，希望在已有能力基础上继续变强。
@@ -45,6 +49,8 @@
   记录：2026-10-11；preference / current / user_quote；dated_record；来源 S002
 - **VA010** 历史对话中接受过“先现金流、后资本化”的稳健成长路线，并表达未来战略与生态统筹的CEO愿景。
   记录：2025-10-11；goal / historical / retrieved_user_statement；historical；来源 S003
+- **VA013** 本人把工程资料与软件工程并列为自己的实践方向，并要求比较两者的特点与难度。该记录保留本人对能力方向的描述。
+  记录：2026-11-06；fact / historical / user_quote；historical；来源 S015
 
 ## 公司与业务经营
 
@@ -63,26 +69,24 @@
 - **BU008** “内地负责研发交付、香港负责全球市场品牌与收款”是历史助手的组织分工建议，未见用户逐项确认已实施。
   记录：2026-07-18；inference / candidate / assistant_inference；dated_record；来源 S003
 - **BU009** 香港公司官网需求定位为面向全球企业的AI自动化与软件解决方案，覆盖定制开发、电商自动化、SaaS和流程集成；第一版英文优先。
-  记录：2026-05-08；requirement / documented / document_requirement；dated_record；来源 S009
+  记录：2026-05-08；requirement / documented / document_requirement；review_due；来源 S009
 - **BU010** 香港公司官网需求聚焦高价值技术服务，要求不虚构客户和成果；不把需求中的Next.js/TypeScript/Tailwind/Vercel推荐栈当作已上线技术栈。
   记录：2026-05-08；constraint / documented / document_requirement；dated_record；来源 S009
 
 ## OfficeFlow产品档案
 
 - **OF018** 明确产品不收集客户信息；涉及客户文件、任务内容、日志和使用行为的上传功能不能自行加入。
-  记录：2026-09-07；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-09-07；fact / current / user_quote；review_due；来源 S002
 - **OF019** 当前商业化动作是制作OfficeFlow演示与教程，通过平台自媒体推广。
-  记录：2026-10-05；fact / current / user_quote；dated_record；来源 S002
-- **OF020** 正在推进OfficeFlow Mac版本完善。
-  记录：2026-10-11；fact / current / user_quote；dated_record；来源 S002
-- **OF021** 明确Windows版正在使用，Mac版尚未完成；这是最新可见用户状态，未发现后续完成记录。
-  记录：2026-10-15；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-10-05；fact / current / user_quote；review_due；来源 S002
 - **OF022** 宣传视频要求突出exe自定义插件，中文男声、两段融合、前后去重复、22秒以内并尽量节省点数。
   记录：2026-10-18；fact / current / user_quote；dated_record；来源 S002
 - **OF023** 关注与Macro Scheduler的竞争差异、产品命名侵权问题和如何自动成交；未提供最终法律意见或成交数据。
   记录：2026-09-03；fact / current / user_quote；review_due；来源 S002
 - **OF024** 关注插件生态管理与OFL公开治理；具体公开范围与治理机制仍需实际方案确认。
-  记录：2026-09-05；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-09-05；fact / current / user_quote；review_due；来源 S002
+- **OF038** 本人确认 OfficeFlow Mac 版已完成。具体版本、实际完成日期、已验证范围及发布状态待确认。
+  记录：2026-11-27；fact / current / user_quote；dated_record；来源 S018
 - **OF001** OfficeFlow是核心软件产品方向，强调本地办公自动化和EXE桌面交付，不希望仅做COM插件。
   记录：日期未知；fact / historical / memory_summary；undated；来源 S001
 - **OF002** 产品思路是用统一任务语言OFL连接任务定义与确定性执行；既定流程重复运行可以不调用模型，不等于整个开发和业务永远零成本。
@@ -131,6 +135,10 @@
   记录：2026-09-03；fact / documented / document_record；dated_record；来源 S006
 - **OF032** 客户说明书中的Global远程配置有独立控制器、签名器、D1和管理域名；本轮没有执行三机回传或远程验收。
   记录：2026-09-03；fact / documented / document_record；dated_record；来源 S006
+- **OF036** 本人曾报告一批 400 多份工程资料的执行异常：前 160 份结果正常，从第 161 份起结果异常，单独执行正常。随后将问题归因于自己的宏代码，修复和复测结果待确认。
+  记录：2026-10-23；fact / historical / user_quote；historical；来源 S015
+- **OF037** 本人提出评估一条推进顺序：先用工程资料自动化释放时间，再推广 OfficeFlow。具体切换条件和执行结果待确认。
+  记录：日期未知；interest / current / conversation_topic；undated；来源 S015
 - **OF033** 九月修订计划记录4.4.0已列出表单/JSON同步、字段错误与差异预览；4.5.0列出可选录制、草稿生命周期、迁移和升级前备份。
   记录：2026-09-08；fact / documented / document_record；dated_record；来源 S005
 - **OF034** 九月修订计划承认任务快照、追加账本、幂等、两阶段提交、有限重试与恢复等已有实践；不能据此称所有故障覆盖已验收。

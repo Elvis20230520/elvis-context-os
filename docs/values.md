@@ -1,11 +1,15 @@
 # Elvis Context OS · full
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：restricted
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：restricted
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
 ## 价值观与习惯
 
+- **VA012** 近期交流强调数据、量化与数字化的重要性，并重视把实践中获得的经验写入文档后再用于实际工作。
+  记录：2026-11-04；preference / current / retrieved_user_statement；dated_record；来源 S016,S019
+- **VA014** 希望每周确定一个首要成果，让学习围绕实际交付，并用可展示的能力、用户任务完成情况及净节省的人工时间校准数量指标。
+  记录：2026-10-24；preference / current / retrieved_user_statement；dated_record；来源 S019
 - **VA001** 自述对困难的承受能力较高，野心大且实干。
   记录：2026-09-01；preference / current / memory_summary；dated_record；来源 S001
 - **VA002** 强调自己把控和设计人生方向，希望在已有能力基础上继续变强。
@@ -28,4 +32,6 @@
   记录：2025-10-11；goal / historical / retrieved_user_statement；historical；来源 S003
 - **VA011** 历史对话讨论过香港主板与资本化目标；这是长期愿景，不是上市进度或承诺。
   记录：2025-10-11；goal / historical / retrieved_user_statement；historical；来源 S003
+- **VA013** 本人把工程资料与软件工程并列为自己的实践方向，并要求比较两者的特点与难度。该记录保留本人对能力方向的描述。
+  记录：2026-11-06；fact / historical / user_quote；historical；来源 S015
 
