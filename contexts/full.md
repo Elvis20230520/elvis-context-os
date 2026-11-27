@@ -1,6 +1,6 @@
 # Elvis Context OS · full
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：private
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：private
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
@@ -25,6 +25,10 @@
 
 ## 价值观与习惯
 
+- **VA012** 近期交流强调数据、量化与数字化的重要性，并重视把实践中获得的经验写入文档后再用于实际工作。
+  记录：2026-11-04；preference / current / retrieved_user_statement；dated_record；来源 S016,S019
+- **VA014** 希望每周确定一个首要成果，让学习围绕实际交付，并用可展示的能力、用户任务完成情况及净节省的人工时间校准数量指标。
+  记录：2026-10-24；preference / current / retrieved_user_statement；dated_record；来源 S019
 - **VA001** 自述对困难的承受能力较高，野心大且实干。
   记录：2026-09-01；preference / current / memory_summary；dated_record；来源 S001
 - **VA002** 强调自己把控和设计人生方向，希望在已有能力基础上继续变强。
@@ -45,6 +49,8 @@
   记录：2026-10-11；preference / current / user_quote；dated_record；来源 S002
 - **VA010** 历史对话中接受过“先现金流、后资本化”的稳健成长路线，并表达未来战略与生态统筹的CEO愿景。
   记录：2025-10-11；goal / historical / retrieved_user_statement；historical；来源 S003
+- **VA013** 本人把工程资料与软件工程并列为自己的实践方向，并要求比较两者的特点与难度。该记录保留本人对能力方向的描述。
+  记录：2026-11-06；fact / historical / user_quote；historical；来源 S015
 
 ## AI协作与工作方式
 
@@ -80,6 +86,8 @@
   记录：2026-10-05；preference / current / user_quote；dated_record；来源 S002
 - **CO009** 近期要求建立六个有英文名和职位备注的AI员工，并希望右侧有成员头像、能够随时加人；现有信息没有证明六个持久Agent已创建。
   记录：日期未知；preference / current / user_quote；undated；来源 S002
+- **CO017** Dvid 团队工作台的需求进一步包括聊天式派单、@成员、团队可视化和 Ctrl+1 打开管理页。持久 Agent 和实际派单状态待核实。
+  记录：2026-10-20；requirement / current / memory_summary；dated_record；来源 S016
 
 ## 英语与认知学习
 
@@ -88,7 +96,7 @@
 - **LE006** 设定IELTS General Training总分至少6.5的目标，准备期三个月，计划每天2–3小时；没有已考分数。
   记录：2026-10-01；goal / current / memory_summary；dated_record；来源 S001
 - **LE007** 要求每周进行技术英语练习，语境包括Python、AI工具、软件项目和国际协作，含口语或写作小练习、纠错及更自然的职业表达。
-  记录：2026-08-24；goal / current / user_quote；dated_record；来源 S002
+  记录：2026-08-24；goal / current / user_quote；review_due；来源 S002
 - **LE008** 再次提出每周技术英语练习要求；是否存在有效自动化日程需单独检查。
   记录：2026-10-19；goal / current / user_quote；dated_record；来源 S002
 - **LE009** 英语对其国际技术协作和个人方向非常重要，希望持续提高。
@@ -97,6 +105,10 @@
   记录：2026-09-15；goal / current / user_quote；dated_record；来源 S002
 - **LE011** 持续构建认知与知识体系，推荐书籍需要避免重复，并连接实际应用。
   记录：2026-10-15；goal / current / user_quote；dated_record；来源 S002
+- **LE024** 知识体系阅读偏好增加讲解深度，避免篇幅过短。既有要求包括推荐去重，并联系自己的项目和决策场景。
+  记录：2026-11-06；preference / current / memory_summary；dated_record；来源 S016,S002
+- **LE025** 知识体系书单先列中文书名，再附英文原名。有正式中译本时优先采用正式译名。
+  记录：2026-11-22；preference / current / retrieved_user_statement；dated_record；来源 S019
 - **LE001** 历史记录：英语流利说8级、坚持507天、累计约427小时；这些数值只对应当时，不外推为今天。
   记录：2026-05-18；fact / historical / memory_summary；historical；来源 S001
 - **LE002** 历史摘要记录Google IT Automation with Python六门课程已完成；本轮未查验证书。
@@ -154,6 +166,8 @@
   记录：2026-07-26；constraint / documented / document_requirement；dated_record；来源 S010
 - **SK011** Freelancer.com面试成功并获得认证，是2025-11-08用户明确报告的完成结果；不补造通过率或证书等级。
   记录：2025-11-08；fact / historical / retrieved_user_statement；historical；来源 S003
+- **SK012** 2026-10-14 收到 Cloudflare D1 每日写入配额超限通知，后续还有接近阈值的告警。10 月 20 日的调查依据邮件确认告警，涉及的数据库、写入来源和实际业务影响待核实。
+  记录：2026-10-14；fact / historical / document_record；historical；来源 S017
 
 ## 公司与业务经营
 
@@ -172,26 +186,24 @@
 - **BU008** “内地负责研发交付、香港负责全球市场品牌与收款”是历史助手的组织分工建议，未见用户逐项确认已实施。
   记录：2026-07-18；inference / candidate / assistant_inference；dated_record；来源 S003
 - **BU009** 香港公司官网需求定位为面向全球企业的AI自动化与软件解决方案，覆盖定制开发、电商自动化、SaaS和流程集成；第一版英文优先。
-  记录：2026-05-08；requirement / documented / document_requirement；dated_record；来源 S009
+  记录：2026-05-08；requirement / documented / document_requirement；review_due；来源 S009
 - **BU010** 香港公司官网需求聚焦高价值技术服务，要求不虚构客户和成果；不把需求中的Next.js/TypeScript/Tailwind/Vercel推荐栈当作已上线技术栈。
   记录：2026-05-08；constraint / documented / document_requirement；dated_record；来源 S009
 
 ## OfficeFlow产品档案
 
 - **OF018** 明确产品不收集客户信息；涉及客户文件、任务内容、日志和使用行为的上传功能不能自行加入。
-  记录：2026-09-07；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-09-07；fact / current / user_quote；review_due；来源 S002
 - **OF019** 当前商业化动作是制作OfficeFlow演示与教程，通过平台自媒体推广。
-  记录：2026-10-05；fact / current / user_quote；dated_record；来源 S002
-- **OF020** 正在推进OfficeFlow Mac版本完善。
-  记录：2026-10-11；fact / current / user_quote；dated_record；来源 S002
-- **OF021** 明确Windows版正在使用，Mac版尚未完成；这是最新可见用户状态，未发现后续完成记录。
-  记录：2026-10-15；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-10-05；fact / current / user_quote；review_due；来源 S002
 - **OF022** 宣传视频要求突出exe自定义插件，中文男声、两段融合、前后去重复、22秒以内并尽量节省点数。
   记录：2026-10-18；fact / current / user_quote；dated_record；来源 S002
 - **OF023** 关注与Macro Scheduler的竞争差异、产品命名侵权问题和如何自动成交；未提供最终法律意见或成交数据。
   记录：2026-09-03；fact / current / user_quote；review_due；来源 S002
 - **OF024** 关注插件生态管理与OFL公开治理；具体公开范围与治理机制仍需实际方案确认。
-  记录：2026-09-05；fact / current / user_quote；dated_record；来源 S002
+  记录：2026-09-05；fact / current / user_quote；review_due；来源 S002
+- **OF038** 本人确认 OfficeFlow Mac 版已完成。具体版本、实际完成日期、已验证范围及发布状态待确认。
+  记录：2026-11-27；fact / current / user_quote；dated_record；来源 S018
 - **OF001** OfficeFlow是核心软件产品方向，强调本地办公自动化和EXE桌面交付，不希望仅做COM插件。
   记录：日期未知；fact / historical / memory_summary；undated；来源 S001
 - **OF002** 产品思路是用统一任务语言OFL连接任务定义与确定性执行；既定流程重复运行可以不调用模型，不等于整个开发和业务永远零成本。
@@ -240,6 +252,10 @@
   记录：2026-09-03；fact / documented / document_record；dated_record；来源 S006
 - **OF032** 客户说明书中的Global远程配置有独立控制器、签名器、D1和管理域名；本轮没有执行三机回传或远程验收。
   记录：2026-09-03；fact / documented / document_record；dated_record；来源 S006
+- **OF036** 本人曾报告一批 400 多份工程资料的执行异常：前 160 份结果正常，从第 161 份起结果异常，单独执行正常。随后将问题归因于自己的宏代码，修复和复测结果待确认。
+  记录：2026-10-23；fact / historical / user_quote；historical；来源 S015
+- **OF037** 本人提出评估一条推进顺序：先用工程资料自动化释放时间，再推广 OfficeFlow。具体切换条件和执行结果待确认。
+  记录：日期未知；interest / current / conversation_topic；undated；来源 S015
 - **OF033** 九月修订计划记录4.4.0已列出表单/JSON同步、字段错误与差异预览；4.5.0列出可选录制、草稿生命周期、迁移和升级前备份。
   记录：2026-09-08；fact / documented / document_record；dated_record；来源 S005
 - **OF034** 九月修订计划承认任务快照、追加账本、幂等、两阶段提交、有限重试与恢复等已有实践；不能据此称所有故障覆盖已验收。
@@ -249,6 +265,8 @@
 
 ## 工程资料与DocumentFlow
 
+- **EN025** 本人计划在接下来几个月集中解决工程资料质量问题，重点改善分项参数的细度。整改完成情况和验收结果待确认。
+  记录：2026-11-17；goal / current / retrieved_user_statement；dated_record；来源 S019
 - **EN001** 工程资料文档体系自动化是独立项目，与OfficeFlow没有直接依赖，成熟后再考虑接入。
   记录：2026-09-19；fact / current / user_quote；dated_record；来源 S002
 - **EN002** 目标是把工程资料工作整体系统化：项目图纸、台账、参数、知识经验与生成流程组织在一起。
@@ -291,8 +309,16 @@
   记录：2026-09-20；requirement / documented / document_requirement；dated_record；来源 S004
 - **EN021** Gateway本期非目标包括完整OCR、完整WBS业务、微服务、多Agent、向量库和OfficeFlow集成；这是该版本边界，不是永久产品禁令。
   记录：2026-09-20；requirement / documented / document_requirement；dated_record；来源 S004
+- **EN024** 本人报告，近期工程分项参数的细度不足，并收到项目资料质量方面的反馈。
+  记录：2026-11-17；fact / historical / retrieved_user_statement；historical；来源 S019
+- **EN026** 希望 DocumentFlow 保留原始页码、提取依据、复核记录、规则版本和适用范围，并说明各项复核能独立发现哪些错误。
+  记录：2026-11-06；preference / current / retrieved_user_statement；dated_record；来源 S019
+- **EN027** 交安工程的 JA-001 交通标志、JA-002 路面标线、JA-003 波形护栏草稿规则及参数生成工具已随规则库 PR #2 合入 main。各实际项目的验收结果需分别记录。
+  记录：2026-10-22；fact / historical / document_record；historical；来源 S020
 - **EN022** 曾把OSS理解为线上数据库；仓库术语应明确对象存储用于文件，结构化业务事实与索引需要相应数据库或元数据层。
   记录：2026-09-22；inference / historical / conversation_topic；historical；来源 S002
+- **EN023** 本人要求整体比较两份不同日期的 Excel 工程资料工作簿中模块 15 的 VBA 改动。具体差异、修复或发布结果需另行核查。
+  记录：2026-10-29；fact / historical / user_quote；historical；来源 S015
 
 ## 其他产品项目
 
