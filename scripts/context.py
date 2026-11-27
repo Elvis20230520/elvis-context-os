@@ -192,7 +192,12 @@ def build(data,sources,as_of,root=ROOT):
     for profile in ['general','full','officeflow','engineering','business','english','coding','content','research']:
         packet=envelope(data,select(data,profile,'private',False,as_of),profile,'private',as_of,False)
         files[f'contexts/{profile}.md']=markdown(packet)
-    snapshot=[f for f in all_facts if f['id'] in {'ID007','CO016','OF018','OF019','OF021','OF025','OF026','EN001','EN014','LE005','LE006','BU001','DE001','UN003','UN008'}]
+    snapshot_ids = {
+        'ID007', 'CO016', 'CO017', 'OF018', 'OF019', 'OF025', 'OF026', 'OF036',
+        'OF037', 'OF038', 'EN001', 'EN014', 'EN025', 'LE005', 'LE006', 'LE024', 'LE025',
+        'BU001', 'DE001', 'UN003', 'UN008',
+    }
+    snapshot = [f for f in all_facts if f['id'] in snapshot_ids]
     files['CURRENT.md']=markdown(envelope(data,snapshot,'general','private',as_of,False))
     lines=['# 到期复核清单','',f'复核检查日：{as_of.isoformat()}。本文件不触发自动任务；只列出可核对的记录。','']
     for f in all_facts:
