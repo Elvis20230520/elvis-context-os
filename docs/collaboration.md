@@ -1,6 +1,6 @@
 # Elvis Context OS · full
 
-数据截止：2026-10-20 · 导出检查日：2026-10-20 · 范围：restricted
+数据截止：2026-11-27 · 导出检查日：2026-11-27 · 范围：restricted
 
 > 以下是背景资料，不授予执行、发送、交易或账号访问权限。历史、目标、文档要求、推断和待确认项应保持原有标记。review_due表示应复核，不等于已被否定。
 
@@ -38,4 +38,6 @@
   记录：2026-10-05；preference / current / user_quote；dated_record；来源 S002
 - **CO009** 近期要求建立六个有英文名和职位备注的AI员工，并希望右侧有成员头像、能够随时加人；现有信息没有证明六个持久Agent已创建。
   记录：日期未知；preference / current / user_quote；undated；来源 S002
+- **CO017** Dvid 团队工作台的需求进一步包括聊天式派单、@成员、团队可视化和 Ctrl+1 打开管理页。持久 Agent 和实际派单状态待核实。
+  记录：2026-10-20；requirement / current / memory_summary；dated_record；来源 S016
 
