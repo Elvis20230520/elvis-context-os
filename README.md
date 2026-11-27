@@ -4,9 +4,22 @@
 
 以可迁移的 Markdown + JSON 保存职业背景、两家公司、OfficeFlow、工程资料自动化、技术、英语、商业、内容品牌、习惯、目标与探索。让一个新的产品或 AI 助手可以迅速理解我，并知道哪些内容已确认、哪些是历史记录、哪些仍在计划中。
 
-本仓库是**私有主档案**。内容截止于 **2026-10-20**，首版有 **185 条记录、14 个来源、14 个主题档案**。覆盖可访问的历史，不声称已获得多年全部对话。姓名、公司法定名称、最新产品版本、收入和成果存在明确待补项。
+**这个 GitHub 仓库目前公开。** 已提交的文件及历史可被访问者读取。`public`、`private` 和 `restricted` 标签只控制导出范围。完整个人档案应在受控环境中维护。 [保存与导出范围](docs/PRIVACY.md)
 
-## 现在开始
+## 公开导出
+
+在仓库根目录用 Python 3.10+ 运行。Windows 可用 `py -3` 代替 `python3`。
+
+```bash
+python3 scripts/context.py export --profile full --audience public --output exports/public.md
+python3 scripts/context.py export --profile full --audience public --format json --output exports/public.json
+```
+
+每条公开记录都需要设置 `sensitivity=public` 和 `public_approved=true`。档案没有逐条批准的记录时，公开导出为空。
+
+## 私有档案维护
+
+首版档案以 2026-10-20 为基线，包含 185 条记录和 14 个来源。
 
 - **交给 Codex：** [CODEX_START_HERE.md](CODEX_START_HERE.md)
 - **先了解我：** [CURRENT.md](CURRENT.md) → [通用上下文](contexts/general.md)
@@ -15,7 +28,7 @@
 - **随时更新：** [维护流程](docs/MAINTENANCE.md)、[更新模板](templates/update.md)
 - **接入其他产品：** [集成说明](integrations/README.md)
 
-## 用途与入口
+## 私有档案用途与入口
 
 | 场景 | 推荐读取 | 可生成的结构化范围 |
 | --- | --- | --- |
@@ -29,7 +42,7 @@
 | REA、交易与研究 | `contexts/research.md` | `research` |
 | 完整私有复盘 | `data/facts.json` + `docs/` | `full --audience restricted` |
 
-## 运行
+## 校验与生成
 
 只需 Python 3.10+ 标准库；不需要 API Key、数据库、付费服务或模型调用。Windows 可以把 `python3` 换成 `py -3`；macOS/Linux 通常使用 `python3`。以下命令均在仓库根目录运行。
 
@@ -81,5 +94,3 @@ flowchart TD
 ## 使用边界
 
 旧收入不能当成当前余额；询问实盘交易不能当成已盈利；发布说明书不能证明所有功能已验收；“能力目标75%”不能当成已达成。AI读到这些背景，也不能据此获得发送消息、交易或修改其他系统的授权。
-
-整仓库包含私密数据。`private/restricted/public`是**导出筛选标签**，不是仓库内访问隔离或加密。对外复用请只交付经过筛选的导出文件，不直接公开主仓库。公开导出需逐条设置 `sensitivity=public` 与 `public_approved=true`；首版没有预批准公开记录。

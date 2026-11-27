@@ -23,6 +23,22 @@ class ContextTests(unittest.TestCase):
     def test_classification_alone_not_public_approval(self):
         d=copy.deepcopy(self.data);d['facts'][0]['sensitivity']='public'
         self.assertEqual(c.select(d,'full','public',as_of=self.when),[])
+    def test_public_export_limits_replacement_references(self):
+        data = copy.deepcopy(self.data)
+        private, approved, unapproved, replacement = data['facts'][:4]
+        private.update(status='historical', sensitivity='private', public_approved=False)
+        approved.update(status='historical', sensitivity='public', public_approved=True)
+        unapproved.update(status='historical', sensitivity='public', public_approved=False)
+        old_ids = [private['id'], approved['id'], unapproved['id']]
+        replacement.update(status='current', sensitivity='public', public_approved=True,
+                           supersedes=old_ids)
+
+        public = c.select(data, 'full', 'public', as_of=self.when)
+        self.assertEqual([record['id'] for record in public], [replacement['id']])
+        self.assertEqual(public[0]['supersedes'], [approved['id']])
+        internal = c.select(data, 'full', 'private', as_of=self.when)
+        exported = next(record for record in internal if record['id'] == replacement['id'])
+        self.assertEqual(exported['supersedes'], old_ids)
     def test_history_not_relabelled_current(self):
         f=next(f for f in c.select(self.data,'full','restricted',as_of=self.when) if f['id']=='FI001')
         self.assertEqual(f['status'],'historical');self.assertEqual(f['observed_at'],'2025-11-01')
